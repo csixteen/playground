@@ -5,4 +5,4 @@ This is my playground (or laboratory, if you will), where I experiment new toys 
 
 # License
 
-None. Use this as it pleases you. Knock yourself out.
+None. Use this as it pleases you.
