@@ -1,3 +1,0 @@
-[console_scripts]
-start = myapp.main:main
-

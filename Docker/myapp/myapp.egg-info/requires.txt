@@ -1,7 +1,0 @@
-fastapi<0.64.0,>=0.63.0
-gunicorn<21.0.0,>=20.0.4
-httptools<0.2.0,>=0.1.1
-loguru<0.6.0,>=0.5.3
-python-multipart<0.0.6,>=0.0.5
-uvicorn<0.14.0,>=0.13.3
-uvloop<0.16.0,>=0.15.0
