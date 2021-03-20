@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
@@ -78,8 +79,10 @@ func main() {
 	router := mux.NewRouter()
 	router.Use(prometheusMiddleware)
 
-	// Serve static files
-	router.PathPrefix("/static").Handler(http.FileServer(http.Dir("./static/")))
+	// Simple Hello, World handler
+	router.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		json.NewEncoder(w).Encode(map[string]string{"message": "Hello, world!"})
+	})
 
 	// Prometheus metrics endpoint
 	router.Path("/metrics").Handler(promhttp.Handler())

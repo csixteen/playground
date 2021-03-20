@@ -9,4 +9,6 @@ FROM alpine:latest
 LABEL maintainer="Pedro Rodrigues <csixteen@protonmail.com>"
 COPY --from=builder /go/src/myapp/myapp /bin/
 
+EXPOSE 8000
+
 CMD ["/bin/myapp"]
